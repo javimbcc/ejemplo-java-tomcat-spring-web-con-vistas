@@ -18,6 +18,8 @@ public class gestionAlmacen {
 	public void insertarProducto2(producto2 producto2) {
 		repo2.insertar(producto2);
 	}
+	
+	@Autowired GestionAlmacen gestorTorre;
 
 	@RequestMapping("/listaproductos1")
 	public List<producto1> listarTodosProductos1() {
